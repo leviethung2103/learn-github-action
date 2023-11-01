@@ -1,6 +1,8 @@
 name: Create a comment on new issues
 
-on: issue_comment
+on: 
+  issues:
+    types: [opened]
 
 jobs:
   comment-with-action:
